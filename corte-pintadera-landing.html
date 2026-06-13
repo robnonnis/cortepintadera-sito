@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Corte Pintadera — Casa vacanza a Uta, Sardegna</title>
+<meta name="description" content="Una casa vacanza nel cuore di Uta, ricavata da una dimora del 1950. Soffitti dipinti a mano, veranda privata, giardino. A dieci minuti dall'aeroporto di Cagliari." />
+
+<meta property="og:title" content="Corte Pintadera — Sotto soffitti dipinti a mano nel 1950" />
+<meta property="og:description" content="Casa vacanza autentica nel cuore di Uta, Sardegna. Soffitti affrescati, veranda privata, giardino. A 10 minuti dall'aeroporto di Cagliari." />
+<meta property="og:image" content="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_1200/v1774465440/cucina_soggiorno_berr0o.jpg" />
+<meta property="og:url" content="https://cortepintadera.it" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="it_IT" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --earth:#241813;
+  --earth-2:#2E211A;
+  --clay:#6E3119;
+  --terra:#B4541F;
+  --terra-d:#9A461A;
+  --gold:#C9A24B;
+  --gold-lt:#E3C883;
+  --plaster:#EFE6D6;
+  --plaster-d:#E5D9C4;
+  --bone:#F8F2E8;
+  --ink:#2E211A;
+  --ink-soft:#6B5849;
+
+  --ff-display:'Fraunces',Georgia,serif;
+  --ff-body:'Hanken Grotesk',system-ui,sans-serif;
+
+  --max:1180px;
+  --gut:clamp(20px,5vw,40px);
+}
+
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-body);background:var(--plaster);color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+
+.eyebrow{font-family:var(--ff-body);font-size:.72rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- nav ---------- */
+nav{position:fixed;inset:0 0 auto 0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:18px var(--gut);transition:background .4s,padding .4s,box-shadow .4s}
+nav.solid{background:rgba(36,24,19,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(201,162,75,.15);padding-top:13px;padding-bottom:13px}
+.brand{font-family:var(--ff-display);font-weight:400;font-size:1.25rem;letter-spacing:.04em;color:var(--bone)}
+.brand span{color:var(--gold)}
+.nav-cta{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--bone);border:1px solid rgba(248,242,232,.45);padding:9px 20px;border-radius:100px;transition:.25s}
+.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--earth)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:120px var(--gut) 100px}
+.hero-bg{position:absolute;inset:0;background:url('https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_1800/v1774465440/cucina_soggiorno_berr0o.jpg') center/cover;transform:scale(1.08);animation:heroZoom 14s ease-out forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero-veil{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 30%,rgba(36,24,19,.35) 0%,rgba(36,24,19,.72) 60%,rgba(36,24,19,.92) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:860px}
+.hero .eyebrow{color:var(--gold-lt);margin-bottom:30px;display:flex;align-items:center;justify-content:center;gap:14px}
+.hero .eyebrow i{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);font-style:normal}
+.hero h1{font-family:var(--ff-display);font-weight:300;color:var(--bone);font-size:clamp(2.7rem,7.5vw,5.6rem);line-height:1.02;letter-spacing:-.015em;margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--gold-lt)}
+.hero p{font-size:clamp(1rem,1.5vw,1.15rem);font-weight:300;color:rgba(248,242,232,.82);max-width:560px;margin:0 auto 42px;line-height:1.7}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--ff-body);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:16px 34px;border-radius:100px;transition:.25s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:var(--earth)}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(248,242,232,.5);color:var(--bone)}
+.btn-ghost:hover{background:rgba(248,242,232,.1);border-color:var(--bone)}
+.btn-dark{background:var(--earth);color:var(--bone)}
+.btn-dark:hover{background:#160d09;transform:translateY(-2px)}
+.btn-wa{background:#1FA855;color:#fff}
+.btn-wa:hover{background:#178a45;transform:translateY(-2px)}
+
+/* seal */
+.seal{width:96px;height:96px;margin:0 auto 26px;display:block;filter:drop-shadow(0 0 18px rgba(201,162,75,.35))}
+.seal .spin{transform-origin:50px 50px;animation:sealSpin 90s linear infinite}
+@keyframes sealSpin{to{transform:rotate(360deg)}}
+.seal circle,.seal line{fill:none;stroke:var(--gold-lt);vector-effect:non-scaling-stroke}
+.seal .tick{stroke-width:1.4;stroke-dasharray:1.4 4.2;stroke-linecap:round}
+.seal .thin{stroke-width:1}
+.seal .dots12{stroke-width:3.4;stroke-linecap:round;stroke-dasharray:.1 16.13}
+.seal .dots8{stroke-width:3;stroke-linecap:round;stroke-dasharray:.1 10.9}
+.seal .core{fill:var(--gold-lt);stroke:none}
+.seal-draw circle,.seal-draw line{animation:sealFade 1.2s ease forwards;opacity:0}
+@keyframes sealFade{to{opacity:1}}
+
+.scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(248,242,232,.55)}
+.scroll-cue span{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase}
+.scroll-cue .line{width:1px;height:46px;background:linear-gradient(rgba(248,242,232,.5),transparent);position:relative;overflow:hidden}
+.scroll-cue .line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:60%;background:var(--gold-lt);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{to{top:120%}}
+
+/* ---------- sticky booking bar ---------- */
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:rgba(36,24,19,.96);backdrop-filter:blur(10px);border-top:1px solid rgba(201,162,75,.25);transform:translateY(120%);transition:transform .5s cubic-bezier(.16,1,.3,1);padding:14px var(--gut)}
+.sticky-bar.show{transform:none}
+.sticky-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sticky-price{color:var(--bone);font-family:var(--ff-display);font-size:1.05rem}
+.sticky-price b{color:var(--gold-lt);font-weight:500}
+.sticky-price small{display:block;font-family:var(--ff-body);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(248,242,232,.5);font-weight:600}
+.sticky-bar .btn{padding:13px 26px}
+
+/* ---------- section frame ---------- */
+.section{padding:clamp(80px,11vw,150px) 0}
+.lab{display:inline-flex;align-items:center;gap:11px;margin-bottom:22px}
+.lab::before{content:'';width:30px;height:1px;background:currentColor;opacity:.6}
+.lab.c-terra{color:var(--terra)}
+.lab.c-gold{color:var(--gold)}
+
+/* ---------- manifesto (dark) ---------- */
+.manifesto{background:var(--earth);color:var(--bone);position:relative;overflow:hidden}
+.manifesto .ghost-seal{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:520px;height:520px;opacity:.05;pointer-events:none}
+.manifesto .ghost-seal circle,.manifesto .ghost-seal line{fill:none;stroke:var(--gold-lt)}
+.manifesto-inner{position:relative;z-index:2;max-width:880px}
+.manifesto .lab{color:var(--gold)}
+.manifesto h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.12;letter-spacing:-.01em;margin-bottom:34px}
+.manifesto h2 em{font-style:italic;color:var(--gold-lt)}
+.manifesto p{font-size:1.08rem;font-weight:300;color:rgba(248,242,232,.72);max-width:620px;line-height:1.85}
+.manifesto p+p{margin-top:18px}
+
+/* ---------- frescoes (dark, the moment) ---------- */
+.fresco{background:var(--earth-2);color:var(--bone)}
+.fresco-head{max-width:720px;margin-bottom:54px}
+.fresco .lab{color:var(--gold)}
+.fresco h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(2.2rem,5.2vw,4rem);line-height:1.06;letter-spacing:-.015em;margin-bottom:26px}
+.fresco h2 em{font-style:italic;color:var(--gold-lt)}
+.fresco-head p{font-size:1.05rem;font-weight:300;color:rgba(248,242,232,.72);line-height:1.8;max-width:600px}
+.fresco-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+.fresco-fig{position:relative;overflow:hidden;border-radius:3px}
+.fresco-fig img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.fresco-fig:hover img{transform:scale(1.05)}
+.fresco-fig.tall{grid-row:span 1;min-height:520px}
+.fresco-fig.short{min-height:520px}
+.fresco-cap{position:absolute;left:18px;bottom:16px;font-family:var(--ff-display);font-style:italic;font-size:1rem;color:var(--bone);text-shadow:0 1px 14px rgba(0,0,0,.6)}
+
+/* ---------- story (light, split) ---------- */
+.story-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,90px);align-items:center}
+.story h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.12;letter-spacing:-.01em;color:var(--ink);margin-bottom:26px}
+.story h2 em{font-style:italic;color:var(--terra)}
+.story p{color:var(--ink-soft);font-size:1.02rem;line-height:1.85;margin-bottom:18px}
+.story-fig{position:relative}
+.story-fig img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.story-badge{position:absolute;left:-22px;bottom:-22px;background:var(--terra);color:var(--bone);font-family:var(--ff-display);font-style:italic;font-size:.98rem;line-height:1.35;padding:20px 24px;max-width:210px;border-radius:3px;box-shadow:0 16px 40px rgba(110,49,25,.28)}
+
+/* divider stamp */
+.stamp-div{display:flex;align-items:center;justify-content:center;gap:22px;padding:0 var(--gut)}
+.stamp-div .ln{height:1px;flex:1;max-width:200px;background:linear-gradient(90deg,transparent,rgba(110,49,25,.35))}
+.stamp-div .ln.r{background:linear-gradient(90deg,rgba(110,49,25,.35),transparent)}
+.stamp-div .mk{width:34px;height:34px;flex:none}
+.stamp-div .mk circle,.stamp-div .mk line{fill:none;stroke:var(--terra);opacity:.65}
+.stamp-div .mk .core{fill:var(--terra);stroke:none}
+
+/* ---------- gallery ---------- */
+.gallery{background:var(--plaster-d)}
+.gallery-head{text-align:center;margin-bottom:50px}
+.gallery-head h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(1.9rem,4vw,2.9rem);color:var(--ink)}
+.gallery .lab{justify-content:center}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:12px}
+.g-item{overflow:hidden;border-radius:3px;background:var(--plaster)}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.g-item:hover img{transform:scale(1.06)}
+.g-item.w2{grid-column:span 2}.g-item.h2{grid-row:span 2}
+
+/* ---------- details ---------- */
+.details-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,90px);align-items:start}
+.details h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.1;color:var(--ink);margin-bottom:18px}
+.details h2 em{font-style:italic;color:var(--terra)}
+.details>.wrap>.details-inner .lead{color:var(--ink-soft);font-size:1.02rem;line-height:1.8;margin-bottom:34px;max-width:440px}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--plaster-d);border-radius:4px;overflow:hidden;margin-bottom:34px}
+.spec{padding:24px 14px;text-align:center;border-right:1px solid var(--plaster-d)}
+.spec:last-child{border-right:none}
+.spec b{display:block;font-family:var(--ff-display);font-weight:400;font-size:2.1rem;color:var(--terra);line-height:1}
+.spec small{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px;display:block}
+.amen{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.amen div{display:flex;align-items:center;gap:11px;font-size:.92rem;color:var(--ink);padding:12px 16px;background:var(--bone);border-radius:3px}
+.amen svg{flex:none;color:var(--terra)}
+.details-fig img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
+
+/* ---------- location ---------- */
+.loc{background:var(--earth);color:var(--bone)}
+.loc-inner{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(36px,6vw,72px);align-items:center}
+.loc .lab{color:var(--gold)}
+.loc h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12;color:var(--bone);margin-bottom:20px}
+.loc h2 em{font-style:italic;color:var(--gold-lt)}
+.loc>.wrap>.loc-inner .loc-lead{color:rgba(248,242,232,.7);font-size:1rem;line-height:1.8;margin-bottom:30px;font-weight:300}
+.dist{display:flex;flex-direction:column;gap:1px;background:rgba(248,242,232,.08);border-radius:4px;overflow:hidden}
+.dist div{display:flex;align-items:baseline;gap:16px;padding:15px 20px;background:var(--earth)}
+.dist .nm{flex:1;font-size:.95rem;color:rgba(248,242,232,.85)}
+.dist .tm{font-family:var(--ff-display);font-style:italic;font-size:1.15rem;color:var(--gold-lt)}
+.loc-discover{margin-top:28px}
+.map{border-radius:4px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+.map iframe{width:100%;height:460px;border:0;display:block;filter:saturate(.85) contrast(1.02)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--plaster-d);text-align:center}
+.reviews .lab{justify-content:center;color:var(--terra)}
+.reviews h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(1.9rem,4vw,2.8rem);color:var(--ink);margin-bottom:18px}
+.reviews h2 em{font-style:italic;color:var(--terra)}
+.reviews .stars{font-size:1.3rem;color:var(--gold);letter-spacing:6px;margin-bottom:18px;opacity:.5}
+.reviews p{color:var(--ink-soft);max-width:460px;margin:0 auto;line-height:1.75}
+
+/* ---------- final cta ---------- */
+.final{background:var(--terra);color:var(--bone);text-align:center;position:relative;overflow:hidden}
+.final .ghost-seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:680px;height:680px;opacity:.08;pointer-events:none}
+.final .ghost-seal circle,.final .ghost-seal line{fill:none;stroke:var(--bone)}
+.final-inner{position:relative;z-index:2}
+.final .lab{justify-content:center;color:var(--gold-lt)}
+.final h2{font-family:var(--ff-display);font-weight:300;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.04;letter-spacing:-.015em;margin-bottom:20px}
+.final h2 em{font-style:italic;color:var(--gold-lt)}
+.final>.wrap>.final-inner .final-lead{font-size:1.05rem;font-weight:300;color:rgba(248,242,232,.88);max-width:480px;margin:0 auto 40px;line-height:1.7}
+.final-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.final-note{font-size:.82rem;letter-spacing:.04em;color:rgba(248,242,232,.7)}
+.final-note b{color:var(--bone);font-weight:600}
+
+/* ---------- footer ---------- */
+footer{background:var(--earth);color:rgba(248,242,232,.5);padding:54px var(--gut) 40px}
+.foot-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:28px}
+.foot-brand{font-family:var(--ff-display);font-size:1.4rem;color:var(--gold-lt);letter-spacing:.04em;margin-bottom:8px}
+.foot-addr{font-size:.86rem;line-height:1.7}
+.foot-links{display:flex;flex-direction:column;gap:10px;font-size:.86rem}
+.foot-links a:hover{color:var(--gold-lt)}
+.foot-copy{max-width:var(--max);margin:36px auto 0;padding-top:22px;border-top:1px solid rgba(248,242,232,.1);font-size:.76rem;text-align:center}
+
+/* ---------- responsive ---------- */
+@media(max-width:880px){
+  .fresco-grid{grid-template-columns:1fr}
+  .fresco-fig.tall,.fresco-fig.short{min-height:340px}
+  .story-inner,.details-inner,.loc-inner{grid-template-columns:1fr}
+  .story-fig{order:-1}.story-badge{left:auto;right:14px;bottom:14px}
+  .details-fig{display:none}
+  .loc-inner .map{order:-1}
+  .g-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .g-item.w2{grid-column:span 2}.g-item.h2{grid-row:span 1}
+  .sticky-price small{display:none}
+  .manifesto .ghost-seal{right:-200px;width:380px;height:380px}
+}
+@media(max-width:520px){
+  .specs{grid-template-columns:repeat(2,1fr)}
+  .spec:nth-child(2){border-right:none}
+  .spec:nth-child(1),.spec:nth-child(2){border-bottom:1px solid var(--plaster-d)}
+  .amen{grid-template-columns:1fr}
+  .hero .eyebrow{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hero-bg{transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- pintadera seal template reused via <use> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="pint">
+      <circle class="tick" cx="50" cy="50" r="47"/>
+      <circle class="thin" cx="50" cy="50" r="40"/>
+      <circle class="dots12" cx="50" cy="50" r="31"/>
+      <circle class="thin" cx="50" cy="50" r="24"/>
+      <circle class="dots8" cx="50" cy="50" r="14"/>
+      <circle class="core" cx="50" cy="50" r="4.5"/>
+    </g>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <span class="brand">Corte <span>Pintadera</span></span>
+  <a href="#prenota" class="nav-cta">Prenota</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <svg class="seal seal-draw" viewBox="0 0 100 100" aria-label="Sigillo Corte Pintadera">
+      <g class="spin"><use href="#pint"/></g>
+    </svg>
+    <div class="eyebrow">Apertura 2026 <i></i> Uta · Sardegna</div>
+    <h1>Sotto soffitti<br>dipinti a mano nel <em>1950</em></h1>
+    <p>Una casa vacanza nel cuore di Uta, ricavata da una dimora di famiglia. Veranda privata, giardino — e a dieci minuti l'aeroporto di Cagliari.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-gold">Prenota il soggiorno</a>
+      <a href="https://wa.me/393473208852" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div><span>scorri</span></div>
+</header>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-inner">
+    <div class="sticky-price"><b>da €80</b> a notte<small>Corte Pintadera · Uta</small></div>
+    <a href="#prenota" class="btn btn-gold">Prenota ora</a>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="manifesto section">
+  <svg class="ghost-seal" viewBox="0 0 100 100" aria-hidden="true"><use href="#pint"/></svg>
+  <div class="wrap manifesto-inner">
+    <div class="lab eyebrow reveal">Il nome</div>
+    <h2 class="reveal d1">Non un appartamento.<br>Un <em>pezzo di Sardegna</em><br>che si abita.</h2>
+    <p class="reveal d2">La pintadera è l'antico sigillo nuragico: un timbro di terra cotta inciso a mano, usato per imprimere un segno che fosse riconoscibile fra mille. Identità, appartenenza, autenticità.</p>
+    <p class="reveal d3">Abbiamo dato il suo nome a questa casa perché ogni stanza porta un'impronta che altrove non troverai. Non l'abbiamo arredata: l'abbiamo riportata in vita.</p>
+  </div>
+</section>
+
+<!-- FRESCOES -->
+<section class="fresco section">
+  <div class="wrap">
+    <div class="fresco-head">
+      <div class="lab eyebrow reveal">Alza lo sguardo</div>
+      <h2 class="reveal d1">Soffitti che<br>nessuno dipinge <em>più</em></h2>
+      <p class="reveal d2">Floreali in cucina, geometrici e dorati in camera. Settant'anni fa qualcuno li ha dipinti a mano, uno per uno. Li abbiamo restaurati con rispetto e lasciati esattamente dove sono sempre stati. Dormi, fai colazione, alza gli occhi: è un dettaglio che non dimentichi.</p>
+    </div>
+    <div class="fresco-grid">
+      <div class="fresco-fig short reveal">
+        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_900/v1774465440/dipinto_soffito_camera_da_letto_ltkan4.jpg" alt="Soffitto affrescato geometrico dorato della camera da letto" loading="lazy"/>
+        <span class="fresco-cap">Camera — geometrie dorate</span>
+      </div>
+      <div class="fresco-fig tall reveal d1">
+        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1774465440/Cucina_utkobi.jpg" alt="Cucina con soffitto dipinto a motivi floreali" loading="lazy"/>
+        <span class="fresco-cap">Cucina — motivi floreali</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story section">
+  <div class="wrap story-inner">
+    <div>
+      <div class="lab eyebrow c-terra reveal">La storia</div>
+      <h2 class="reveal d1">Era la casa di<br><em>Antonio e Maddalena</em></h2>
+      <p class="reveal d2">Qui Antonio Lecca e Maddalena Carboni hanno cresciuto i loro figli e visto crescere i nipoti. Una dimora costruita in <em>ladiri</em> — i mattoni di terra cruda del Campidano — con quella cura nei dettagli che avevano le case di una volta.</p>
+      <p class="reveal d3">Oggi è di Alessandro e Roberta, che l'hanno restaurata stanza per stanza senza tradirne l'anima. Non troverai un alloggio anonimo: troverai un luogo con memoria, dove la Sardegna autentica si respira ancora.</p>
+    </div>
+    <div class="story-fig reveal d2">
+      <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_900/v1774465440/cartile_veranda_cpc6ji.jpg" alt="La veranda e il cortile di Corte Pintadera" loading="lazy"/>
+      <div class="story-badge">Una dimora<br>del 1950</div>
+    </div>
+  </div>
+</section>
+
+<div class="stamp-div">
+  <span class="ln"></span>
+  <svg class="mk" viewBox="0 0 100 100" aria-hidden="true"><use href="#pint"/></svg>
+  <span class="ln r"></span>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery section">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div class="lab eyebrow c-terra reveal">Gli spazi</div>
+      <h2 class="reveal d1">Entra, è già casa</h2>
+    </div>
+    <div class="g-grid">
+      <div class="g-item w2 h2 reveal"><img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_1000/v1774465440/cucina_soggiorno_berr0o.jpg" alt="Cucina e soggiorno" loading="lazy"/></div>
+      <div class="g-item reveal d1"><img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_600/v1774465440/veranda_g1vth0.png" alt="Veranda privata" loading="lazy"/></div>
+      <div class="g-item reveal d2"><img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_600/v1774465441/Ingresso_nzulvw.png" alt="Ingresso" loading="lazy"/></div>
+      <div class="g-item reveal d1"><img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_600/v1774465439/ingresso_interno_apcpa5.jpg" alt="Ingresso interno" loading="lazy"/></div>
+      <div class="g-item w2 reveal d2"><img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_900/v1774465440/cartile_veranda_cpc6ji.jpg" alt="Cortile e veranda" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section class="details section">
+  <div class="wrap details-inner">
+    <div>
+      <div class="lab eyebrow c-terra reveal">L'appartamento</div>
+      <h2 class="reveal d1">Tutto quello che ti serve,<br>e <em>qualcosa in più</em></h2>
+      <p class="lead reveal d2">Cinquanta metri quadri interni più una veranda coperta di quaranta, affacciata sul giardino privato. Pensata per due, perfetta per chi cerca la Sardegna vera con ogni comfort moderno.</p>
+      <div class="specs reveal d2">
+        <div class="spec"><b>50</b><small>mq interni</small></div>
+        <div class="spec"><b>40</b><small>mq veranda</small></div>
+        <div class="spec"><b>2</b><small>ospiti</small></div>
+        <div class="spec"><b>1</b><small>bagno</small></div>
+      </div>
+      <div class="amen reveal d3">
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13a10 10 0 0114 0M8.5 16.5a5 5 0 017 0M2 8.8a15 15 0 0120 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg> Fibra Wi-Fi</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11V7a2 2 0 012-2h10a2 2 0 012 2v4M6 19v-2M18 19v-2M4 19h16"/></svg> Cucina attrezzata</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13M3 21h18M9 21v-6h6v6"/></svg> Veranda 40 mq</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M12 12c0-4 2-7 5-8-1 4-2 7-5 8zM12 12c0-3-2-6-5-7 1 3 2 6 5 7z"/></svg> Giardino privato</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M6 12a6 6 0 0112 0M9 12V5M15 12V5M12 12v-3"/></svg> 2 climatizzatori Wi-Fi</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 13a8 8 0 0116 0M12 5V3M12 13v8"/><circle cx="9" cy="17" r="1" fill="currentColor"/><circle cx="15" cy="17" r="1" fill="currentColor"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg> Doccia massaggiante</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a3 3 0 013-3h12a3 3 0 013 3v6M3 14h18M6 9V6a2 2 0 012-2h8a2 2 0 012 2v3"/></svg> Letto matrimoniale</div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V6a4 4 0 018 0v3"/></svg> Parcheggio gratuito</div>
+      </div>
+    </div>
+    <div class="details-fig reveal d2">
+      <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1774465440/veranda_g1vth0.png" alt="Veranda e giardino di Corte Pintadera" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="loc section">
+  <div class="wrap loc-inner">
+    <div>
+      <div class="lab eyebrow reveal">Dove siamo</div>
+      <h2 class="reveal d1">A un passo<br>da <em>tutto il sud</em></h2>
+      <p class="loc-lead reveal d2">Uta è un borgo autentico del Campidano: niente folla, niente caos estivo. Eppure da qui raggiungi l'aeroporto, Cagliari e le spiagge più belle del sud in pochi minuti. La base perfetta per scoprire la Sardegna.</p>
+      <div class="dist reveal d3">
+        <div><span class="nm">Aeroporto Cagliari-Elmas</span><span class="tm">10 min</span></div>
+        <div><span class="nm">Centro di Cagliari</span><span class="tm">20 min</span></div>
+        <div><span class="nm">Spiagge di Chia</span><span class="tm">35 min</span></div>
+        <div><span class="nm">Area archeologica di Nora</span><span class="tm">30 min</span></div>
+      </div>
+      <a href="DISCOVER_URL" class="btn btn-gold loc-discover reveal d3" target="_blank" rel="noopener">Scopri Uta e dintorni</a>
+    </div>
+    <div class="map reveal d2">
+      <iframe title="Mappa Corte Pintadera, Uta" loading="lazy" allowfullscreen
+        src="https://maps.google.com/maps?q=Corte%20Pintadera%2C%20Via%20Cimitero%2038%2FA%2C%20Uta&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews section">
+  <div class="wrap">
+    <div class="lab eyebrow reveal">Recensioni</div>
+    <h2 class="reveal d1">Le prime <em>presto</em></h2>
+    <div class="stars reveal d2">★ ★ ★ ★ ★</div>
+    <p class="reveal d2">Corte Pintadera apre nel 2026. I racconti dei primi ospiti compariranno qui, appena disponibili su Airbnb e Booking.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final section" id="prenota">
+  <svg class="ghost-seal" viewBox="0 0 100 100" aria-hidden="true"><use href="#pint"/></svg>
+  <div class="wrap final-inner">
+    <div class="lab eyebrow reveal">Pronto a partire?</div>
+    <h2 class="reveal d1">La tua Sardegna<br>comincia <em>qui</em></h2>
+    <p class="final-lead reveal d2">Controlla le date su Booking o Airbnb, oppure scrivici due righe su WhatsApp. Ti rispondiamo noi, di persona.</p>
+    <div class="final-cta reveal d2">
+      <a href="#" class="btn btn-dark" target="_blank" rel="noopener">Prenota su Booking</a>
+      <a href="#" class="btn btn-dark" target="_blank" rel="noopener">Airbnb</a>
+      <a href="https://wa.me/393284699520" class="btn btn-wa" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2s0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1 2.1 3.2 5.1 4.5c.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4s.2-1.3.2-1.4-.3-.2-.6-.3M12 21.9h-.1a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 012 11.9C2 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 012.9 7c0 5.5-4.4 9.9-9.9 9.9m8.4-18.3A11.8 11.8 0 0012 0C5.5 0 .2 5.3.2 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.6a11.9 11.9 0 005.7 1.4c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4"/></svg>
+        Alessandro
+      </a>
+      <a href="https://wa.me/393473208852" class="btn btn-wa" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2s0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1 2.1 3.2 5.1 4.5c.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4s.2-1.3.2-1.4-.3-.2-.6-.3M12 21.9h-.1a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 012 11.9C2 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 012.9 7c0 5.5-4.4 9.9-9.9 9.9m8.4-18.3A11.8 11.8 0 0012 0C5.5 0 .2 5.3.2 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.6a11.9 11.9 0 005.7 1.4c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4"/></svg>
+        Roberta
+      </a>
+    </div>
+    <p class="final-note"><b>da €80 a notte</b> · soggiorno minimo 2 notti · cancellazione flessibile<br>Per soggiorni oltre una settimana, tariffe personalizzate su richiesta</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">Corte Pintadera</div>
+      <div class="foot-addr">Via Cimitero 38/A · Uta (CA)<br>Sardegna, Italia</div>
+    </div>
+    <div class="foot-links">
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/393284699520" target="_blank" rel="noopener">WhatsApp Alessandro</a>
+      <a href="https://wa.me/393473208852" target="_blank" rel="noopener">WhatsApp Roberta</a>
+      <a href="mailto:cortepintadera@gmail.com">cortepintadera@gmail.com</a>
+      <a href="#">Privacy policy</a>
+    </div>
+  </div>
+  <div class="foot-copy">© 2026 Corte Pintadera · Tutti i diritti riservati</div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var bar=document.getElementById('stickyBar');
+  var hero=document.querySelector('.hero');
+  var heroH=hero?hero.offsetHeight:600;
+
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    nav.classList.toggle('solid',y>60);
+    bar.classList.toggle('show',y>heroH*0.85);
+  },{passive:true});
+
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>
