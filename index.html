@@ -14,6 +14,7 @@
 <meta property="og:locale" content="it_IT" />
 <meta name="twitter:card" content="summary_large_image" />
 
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,w_64/v1781182383/corte_pintadera_logo_clean_mqshm5.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -88,6 +89,8 @@ nav.solid{background:rgba(36,24,19,.94);backdrop-filter:blur(10px);box-shadow:0 
 .btn-wa:hover{background:#178a45;transform:translateY(-2px)}
 
 /* seal */
+.hero-logo{width:clamp(120px,19vw,168px);height:auto;margin:0 auto 22px;display:block;filter:drop-shadow(0 6px 22px rgba(0,0,0,.45));animation:logoIn 1.3s cubic-bezier(.16,1,.3,1) both}
+@keyframes logoIn{from{opacity:0;transform:translateY(16px) scale(.95)}to{opacity:1;transform:none}}
 .seal{width:96px;height:96px;margin:0 auto 26px;display:block;filter:drop-shadow(0 0 18px rgba(201,162,75,.35))}
 .seal .spin{transform-origin:50px 50px;animation:sealSpin 90s linear infinite}
 @keyframes sealSpin{to{transform:rotate(360deg)}}
@@ -289,9 +292,7 @@ footer{background:var(--earth);color:rgba(248,242,232,.5);padding:54px var(--gut
   <div class="hero-bg"></div>
   <div class="hero-veil"></div>
   <div class="hero-inner">
-    <svg class="seal seal-draw" viewBox="0 0 100 100" aria-label="Sigillo Corte Pintadera">
-      <g class="spin"><use href="#pint"/></g>
-    </svg>
+    <img class="hero-logo seal-draw" src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_400/v1781182383/corte_pintadera_logo_clean_mqshm5.png" alt="Logo Corte Pintadera" />
     <div class="eyebrow">Apertura 2026 <i></i> Uta · Sardegna</div>
     <h1>Sotto soffitti<br>dipinti a mano nel <em>1950</em></h1>
     <p>Una casa vacanza nel cuore di Uta, ricavata da una dimora di famiglia. Veranda privata, giardino — e a dieci minuti l'aeroporto di Cagliari.</p>
@@ -425,7 +426,7 @@ footer{background:var(--earth);color:rgba(248,242,232,.5);padding:54px var(--gut
         <div><span class="nm">Spiagge di Chia</span><span class="tm">35 min</span></div>
         <div><span class="nm">Area archeologica di Nora</span><span class="tm">30 min</span></div>
       </div>
-      <a href="DISCOVER_URL" class="btn btn-gold loc-discover reveal d3" target="_blank" rel="noopener">Scopri Uta e dintorni</a>
+      <a href="https://corte-pintadera.vercel.app/#esplorare" class="btn btn-gold loc-discover reveal d3" target="_blank" rel="noopener">Scopri Uta e dintorni</a>
     </div>
     <div class="map reveal d2">
       <iframe title="Mappa Corte Pintadera, Uta" loading="lazy" allowfullscreen
