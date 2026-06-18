@@ -70,8 +70,8 @@ nav.solid{background:rgba(36,24,19,.94);backdrop-filter:blur(10px);box-shadow:0 
 .hero-bg{position:absolute;inset:0;background:url('https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_1800/v1781358120/IMG_8796_ttaukf.jpg') center/cover;transform:scale(1.08);animation:heroZoom 14s ease-out forwards}
 @keyframes heroZoom{to{transform:scale(1)}}
 .hero-veil{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 30%,rgba(36,24,19,.35) 0%,rgba(36,24,19,.72) 60%,rgba(36,24,19,.92) 100%)}
-.hero-inner{position:relative;z-index:2;max-width:860px}
-.hero .eyebrow{color:var(--gold-lt);margin-bottom:30px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.hero-inner{position:relative;z-index:2;max-width:860px;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;}
+.hero .eyebrow{color:var(--gold-lt);margin-bottom:30px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;width:100%}
 .hero .eyebrow i{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--gold);font-style:normal}
 .hero h1{font-family:var(--ff-display);font-weight:300;color:var(--bone);font-size:clamp(2.7rem,7.5vw,5.6rem);line-height:1.02;letter-spacing:-.015em;margin-bottom:28px}
 .hero h1 em{font-style:italic;color:var(--gold-lt)}
@@ -93,6 +93,8 @@ nav.solid{background:rgba(36,24,19,.94);backdrop-filter:blur(10px);box-shadow:0 
   width:clamp(150px,22vw,200px);
   height:clamp(150px,22vw,200px);
   margin:0 auto 26px;
+  flex-shrink:0;
+  align-self:center;
   border-radius:50%;
   overflow:hidden;
   border:3px solid var(--gold);
