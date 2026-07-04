@@ -330,6 +330,21 @@ nav.solid{background:rgba(36,24,19,.94);backdrop-filter:blur(10px);box-shadow:0 
 .trust-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(248,242,232,.07);border:1px solid rgba(248,242,232,.15);padding:12px 22px;border-radius:6px;font-size:.85rem;color:rgba(248,242,232,.75);font-weight:500;letter-spacing:.04em}
 .trust-badge svg{opacity:.7}
 .trust-note{margin-top:36px;font-size:.82rem;color:rgba(248,242,232,.38);font-style:italic}
+/* REVIEW CARDS */
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:40px;text-align:left}
+.review-card{background:rgba(248,242,232,.07);border:1px solid rgba(201,162,75,.2);border-radius:6px;padding:28px 26px;position:relative}
+.review-stars{color:var(--gold);font-size:1.1rem;letter-spacing:3px;margin-bottom:14px}
+.review-score{position:absolute;top:24px;right:24px;background:var(--gold);color:var(--earth);font-family:var(--ff-display);font-weight:600;font-size:1.1rem;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1}
+.review-text{font-size:.97rem;color:rgba(248,242,232,.8);line-height:1.75;margin-bottom:18px;font-style:italic}
+.review-text.no-comment{color:rgba(248,242,232,.45);font-size:.88rem;font-style:normal}
+.review-cats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.review-cat{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(248,242,232,.5);background:rgba(248,242,232,.06);border:1px solid rgba(248,242,232,.12);padding:4px 10px;border-radius:100px}
+.review-cat b{color:var(--gold-lt);font-weight:700}
+.review-meta{display:flex;align-items:center;gap:10px}
+.review-avatar{width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--earth);font-family:var(--ff-display);font-weight:600;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.review-info{font-size:.82rem;color:rgba(248,242,232,.55);line-height:1.4}
+.review-info strong{display:block;color:rgba(248,242,232,.85);font-size:.88rem;font-weight:600}
+.review-source{display:flex;align-items:center;gap:5px;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(248,242,232,.35);margin-top:14px;padding-top:14px;border-top:1px solid rgba(248,242,232,.08)}
 
 /* FINAL CTA */
 .final{background:var(--terra);color:var(--bone);text-align:center;position:relative;overflow:hidden}
@@ -667,6 +682,33 @@ footer{background:var(--earth);color:rgba(248,242,232,.5);padding:54px var(--gut
   <div class="wrap">
     <div class="lab eyebrow reveal">Perché sceglierci</div>
     <h2 class="reveal d1">Chi siamo, cosa <em>promettiamo</em></h2>
+    <!-- RECENSIONE REALE -->
+    <div class="reviews-grid reveal d1">
+      <div class="review-card">
+        <div class="review-score">10</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-cats">
+          <span class="review-cat">Host <b>10</b></span>
+          <span class="review-cat">Pulizia <b>10</b></span>
+          <span class="review-cat">Comfort <b>10</b></span>
+          <span class="review-cat">Posizione <b>10</b></span>
+          <span class="review-cat">Qualità/prezzo <b>10</b></span>
+          <span class="review-cat">Servizi <b>10</b></span>
+        </div>
+        <p class="review-text no-comment">Punteggio perfetto in ogni categoria — il massimo che si possa lasciare su Booking.com.</p>
+        <div class="review-meta">
+          <div class="review-avatar">S</div>
+          <div class="review-info">
+            <strong>Silvia</strong>
+            Coppia · 2 notti · luglio 2026
+          </div>
+        </div>
+        <div class="review-source">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Recensione verificata su Booking.com · 3 luglio 2026
+        </div>
+      </div>
+    </div>
     <div class="trust-grid">
       <div class="trust-card reveal d1">
         <div class="tc-icon">🏛️</div>
@@ -700,7 +742,7 @@ footer{background:var(--earth);color:rgba(248,242,232,.5);padding:54px var(--gut
         Risposta entro 1h
       </div>
     </div>
-    <p class="trust-note reveal">Le prime recensioni degli ospiti saranno pubblicate qui a partire dall'estate 2026.</p>
+    <p class="trust-note reveal">Altre recensioni in arrivo — siamo aperti da giugno 2026.</p>
   </div>
 </section>
 
